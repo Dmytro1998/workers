@@ -130,3 +130,7 @@ td {
   line-height: 19px;
   color: #b5b5c3;
 }
+img {
+  height: 50px;
+  width: 50px;
+}
