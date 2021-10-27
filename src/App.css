@@ -122,7 +122,8 @@ td {
   line-height: 21px;
   color: #464e5f;
 }
-.skills {
+.skills,
+.status {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;

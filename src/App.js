@@ -37,10 +37,6 @@ class App extends React.Component {
   }
 
   render() {
-    
-     const tbodyData = this.state.items;
-     console.log(tbodyData)
-     console.log(theadData)
     const { error, isLoaded, items } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
@@ -88,7 +84,7 @@ class App extends React.Component {
             <h3>{item.name}</h3>
             <p className= "skills">{item.skills}</p>
           </td>
-  <td><div> {item.earnings}</div></td>
+  <td><div> {item.earnings}<p className ="status" >{item.status}</p></div></td>
  <td>{item.price}</td>
  <td> {item.company}</td>
  <td> {item.rate}</td>
