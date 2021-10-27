@@ -113,3 +113,20 @@ table {
 
   color: #1bc5bd;
 }
+
+td {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #464e5f;
+}
+.skills {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #b5b5c3;
+}

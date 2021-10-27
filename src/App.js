@@ -86,7 +86,7 @@ class App extends React.Component {
           <td><img src={item.photo} alt={item.name}></img></td>
           <td className="about-member">
             <h3>{item.name}</h3>
-            <p>{item.skills}</p>
+            <p className= "skills">{item.skills}</p>
           </td>
   <td><div> {item.earnings}</div></td>
  <td>{item.price}</td>
