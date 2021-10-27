@@ -2,6 +2,9 @@
 import './App.css';
 import React from 'react'
 
+
+const theadData = ["Products", "Earnings", "Comision", "Company", "Rating"];
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -23,9 +26,7 @@ class App extends React.Component {
             items: result
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
+      
         (error) => {
           this.setState({
             isLoaded: true,
@@ -36,6 +37,10 @@ class App extends React.Component {
   }
 
   render() {
+    
+     const tbodyData = this.state.items;
+     console.log(tbodyData)
+     console.log(theadData)
     const { error, isLoaded, items } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
@@ -61,23 +66,45 @@ class App extends React.Component {
 
           </div>
         <ul>
-          {items.map(item => (
-           
-            <li key={item.id}>
-               <div className="firstwrapper">
-              <img src = {item.photo} alt ="account"></img>
+  <table>
 
-              {item.name} {item.skills} {item.price} {item.earnings} {item.rate}
-              </div>
-              
-            </li>
+  <tr>
+    <th>Products</th>
+    <th>Earnings</th>
+    <th>Comision</th>
+    <th>Company </th>
+    <th>Rating</th>
+    
+  </tr>
+  {items.map(item => (
+          
+          
+<tr>
+<td> <img src = {item.photo} alt ="account"></img>  <li key={item.id}> </li></td>
+ <td><div> {item.name}</div></td>
+ <td><div> {item.skills}</div></td>
+ <td>{item.price}</td>
+ <td> {item.earnings}</td>
+</tr>
+             
+             
+               
+           
           
           ))}
+       і
+     
+      );
+  </table>
+
+         
         </ul>
         </div>
       );
     }
   }
+
+
 }
 
 

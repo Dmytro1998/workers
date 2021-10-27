@@ -63,3 +63,13 @@ body {
   line-height: 18px;
   color: #ffffff;
 }
+
+.wrapper-general {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstwrapper {
+  display: flex;
+  flex-direction: column;
+}
