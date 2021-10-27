@@ -68,23 +68,31 @@ class App extends React.Component {
         <ul>
   <table>
 
-  <tr>
-    <th>Products</th>
-    <th>Earnings</th>
-    <th>Comision</th>
-    <th>Company </th>
-    <th>Rating</th>
+  
+  <tr id="header-for-table">
+          <th colSpan="2">PRODUCTS</th>
+          <th>EARNINGS</th>
+          <th>COMISSION</th>
+          <th>COMPANY</th>
+          <th>RATING</th>
+          <th></th>
+
     
   </tr>
   {items.map(item => (
           
           
-<tr>
-<td> <img src = {item.photo} alt ="account"></img>  <li key={item.id}> </li></td>
- <td><div> {item.name}</div></td>
- <td><div> {item.skills}</div></td>
+          <tr key={item.id}>
+          <td><img src={item.photo} alt={item.name}></img></td>
+          <td className="about-member">
+            <h3>{item.name}</h3>
+            <p>{item.skills}</p>
+          </td>
+  <td><div> {item.earnings}</div></td>
  <td>{item.price}</td>
- <td> {item.earnings}</td>
+ <td> {item.company}</td>
+ <td> {item.rate}</td>
+ <td> <button className= "View-offer">View offer</button></td>
 </tr>
              
              

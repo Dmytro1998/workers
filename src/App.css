@@ -73,3 +73,43 @@ body {
   display: flex;
   flex-direction: column;
 }
+#header-for-table {
+  border-collapse: collapse;
+  background-color: #e5e5e5;
+  height: 43px;
+  color: #b5b5c3;
+  font-size: 12px;
+  text-align: left;
+}
+
+th:first-child {
+  color: #464e5f;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding-left: 20px;
+}
+th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.View-offer {
+  width: 92px;
+  height: 34px;
+  right: 30px;
+  top: 181px;
+
+  background: #c9f7f5;
+  border-radius: 6px;
+  border: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #1bc5bd;
+}
